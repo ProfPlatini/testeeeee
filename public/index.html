@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#245cce">
+    <meta name="description" content="Dashboard didático de vendas: explore faturamento, categorias e regiões com filtros e importação local de CSV.">
+    <title>
+      Panorama de vendas • Laboratório de dados
+    </title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js">
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js">
+    </script>
+    <script defer src="./script.js">
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">
+      Pular para o conteúdo
+    </a>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-icon" aria-hidden="true">
+            ▥
+          </span>
+          laboratório
+          <span class="brand-light">
+            de dados
+          </span>
+        </a>
+        <span class="course">
+          Fundamentos de IA e Análise de Dados
+        </span>
+      </div>
+    </header>
+    <main id="conteudo">
+      <section class="page-heading" aria-labelledby="titulo">
+        <div>
+          <p class="eyebrow">
+            EXPLORAR · COMPARAR · DESCOBRIR
+          </p>
+          <h1 id="titulo">
+            Panorama de vendas
+          </h1>
+          <p class="subtitle">
+            Transforme registros em perguntas. Explore os resultados do seu negócio.
+          </p>
+        </div>
+        <div class="heading-actions">
+          <button id="exportar" class="button secondary" disabled>
+            <span aria-hidden="true">
+              ↓
+            </span>
+            Exportar CSV
+          </button>
+          <button id="importar" class="button primary">
+            <span aria-hidden="true">
+              ↑
+            </span>
+            Importar CSV
+          </button>
+          <input type="file" id="arquivo" accept=".csv,text/csv" hidden aria-label="Escolher arquivo CSV">
+        </div>
+      </section>
+      <div class="source-banner">
+        <div>
+          <span class="status-dot" aria-hidden="true">
+          </span>
+          <strong id="fonte">
+            Dados demonstrativos
+          </strong>
+          <span id="fonte-detalhe">
+            200 vendas fictícias · janeiro a dezembro de 2025
+          </span>
+        </div>
+        <button id="restaurar" class="text-button" hidden>
+          Voltar à demonstração
+        </button>
+        <a href="./dados-exemplo.csv" download id="baixar-exemplo">
+          Baixar base exemplo ↗
+        </a>
+      </div>
+      <div id="dependencias" class="notice warning" role="alert" hidden>
+      </div>
+      <div id="mensagem" class="notice" role="status" hidden>
+      </div>
+      <details class="quality">
+        <summary id="qualidade-resumo">
+          Qualidade da base
+        </summary>
+        <p id="qualidade-detalhe">
+        </p>
+      </details>
+      <section class="panel filter-panel" aria-labelledby="filtros-titulo">
+        <div class="section-heading">
+          <h2 id="filtros-titulo">
+            Refine sua análise
+          </h2>
+          <button id="limpar" class="text-button">
+            ↺ Limpar filtros
+          </button>
+        </div>
+        <div class="filters">
+          <div class="field">
+            <label for="inicio">
+              Data inicial
+            </label>
+            <input id="inicio" type="date" min="1900-01-01" max="2100-12-31">
+          </div>
+          <div class="field">
+            <label for="fim">
+              Data final
+            </label>
+            <input id="fim" type="date" min="1900-01-01" max="2100-12-31">
+          </div>
+          <div class="field">
+            <label for="categoria">
+              Categoria
+            </label>
+            <select id="categoria">
+              <option value="">
+                Todas as categorias
+              </option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="regiao">
+              Região
+            </label>
+            <select id="regiao">
+              <option value="">
+                Todas as regiões
+              </option>
+            </select>
+          </div>
+        </div>
+        <p id="erro-periodo" class="field-error" role="alert" hidden>
+          A data inicial deve ser anterior ou igual à data final.
+        </p>
+      </section>
+      <div class="results-heading">
+        <h2>
+          Visão geral
+        </h2>
+        <p id="contagem" role="status">
+        </p>
+      </div>
+      <div id="vazio" class="notice empty" role="status" hidden>
+        Nenhum registro corresponde aos filtros. Ajuste o período, a categoria, a região ou a pesquisa.
+      </div>
+      <section class="metrics" aria-label="Indicadores das vendas filtradas">
+        <article class="metric featured">
+          <div class="metric-label">
+            Faturamento total
+            <span aria-hidden="true">
+              R$
+            </span>
+          </div>
+          <strong id="faturamento">
+            —
+          </strong>
+          <p>
+            Soma da receita das vendas
+          </p>
+        </article>
+        <article class="metric">
+          <div class="metric-label">
+            Quantidade de vendas
+            <span aria-hidden="true">
+              #
+            </span>
+          </div>
+          <strong id="vendas">
+            —
+          </strong>
+          <p>
+            Identificadores únicos
+          </p>
+        </article>
+        <article class="metric">
+          <div class="metric-label">
+            Unidades vendidas
+            <span aria-hidden="true">
+              ▦
+            </span>
+          </div>
+          <strong id="unidades">
+            —
+          </strong>
+          <p>
+            Soma das quantidades
+          </p>
+        </article>
+        <article class="metric">
+          <div class="metric-label">
+            Ticket médio
+            <span aria-hidden="true">
+              R$
+            </span>
+          </div>
+          <strong id="ticket">
+            —
+          </strong>
+          <p>
+            Faturamento por venda única
+          </p>
+        </article>
+      </section>
+      <section class="panel trend" aria-labelledby="evolucao-titulo">
+        <div class="chart-heading">
+          <div>
+            <h2 id="evolucao-titulo">
+              O ritmo das vendas
+            </h2>
+            <p>
+              Faturamento mensal · reais (R$)
+            </p>
+          </div>
+          <span class="legend">
+            <i>
+            </i>
+            Faturamento
+          </span>
+        </div>
+        <div class="chart-container line-container">
+          <canvas id="mensal" role="img" aria-label="Gráfico de linhas do faturamento mensal">
+          </canvas>
+        </div>
+        <p id="mensal-resumo" class="chart-summary">
+        </p>
+      </section>
+      <div class="comparison-grid">
+        <section class="panel" aria-labelledby="categorias-titulo">
+          <div class="chart-heading">
+            <div>
+              <h2 id="categorias-titulo">
+                Receita por categoria
+              </h2>
+              <p>
+                Quais produtos movimentam o resultado?
+              </p>
+            </div>
+            <span class="chart-unit">
+              R$
+            </span>
+          </div>
+          <div class="chart-container bar-container" id="categorias-container">
+            <canvas id="categorias" role="img" aria-label="Gráfico de barras do faturamento por categoria">
+            </canvas>
+          </div>
+          <p id="categorias-resumo" class="chart-summary">
+          </p>
+        </section>
+        <section class="panel" aria-labelledby="regioes-titulo">
+          <div class="chart-heading">
+            <div>
+              <h2 id="regioes-titulo">
+                Receita por região
+              </h2>
+              <p>
+                Compare os resultados em cada região.
+              </p>
+            </div>
+            <span class="chart-unit">
+              R$
+            </span>
+          </div>
+          <div class="chart-container bar-container" id="regioes-container">
+            <canvas id="regioes" role="img" aria-label="Gráfico de barras do faturamento por região">
+            </canvas>
+          </div>
+          <p id="regioes-resumo" class="chart-summary">
+          </p>
+        </section>
+      </div>
+      <section class="panel table-panel" aria-labelledby="tabela-titulo">
+        <div class="table-heading">
+          <div>
+            <h2 id="tabela-titulo">
+              Os dados por trás dos números
+            </h2>
+            <p>
+              Pesquise para filtrar toda a análise. Clique nos títulos para ordenar.
+            </p>
+          </div>
+          <div class="field search">
+            <label for="pesquisa">
+              Pesquisar ID, produto, categoria ou região
+            </label>
+            <input id="pesquisa" type="search" placeholder="Ex.: notebook, Sul, V0001…">
+          </div>
+        </div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de vendas com rolagem horizontal">
+          <table>
+            <caption class="sr-only">
+              Registros filtrados de vendas. A receita é quantidade vezes preço unitário.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" aria-sort="none">
+                  <button data-sort="id_venda">
+                    ID da venda
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="ascending">
+                  <button data-sort="data">
+                    Data
+                    <span>
+                      ↑
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none">
+                  <button data-sort="produto">
+                    Produto
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none">
+                  <button data-sort="categoria">
+                    Categoria
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none">
+                  <button data-sort="regiao">
+                    Região
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none" class="numeric">
+                  <button data-sort="quantidade">
+                    Unidades
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none" class="numeric">
+                  <button data-sort="preco_centavos">
+                    Preço unitário
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none" class="numeric">
+                  <button data-sort="receita_centavos">
+                    Faturamento
+                    <span>
+                      ↕
+                    </span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="linhas">
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <p id="pagina-resumo">
+          </p>
+          <div>
+            <button id="anterior" class="button small" aria-label="Página anterior">
+              ← Anterior
+            </button>
+            <button id="proxima" class="button small" aria-label="Próxima página">
+              Próxima →
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="learning-note">
+        <span aria-hidden="true">
+          ✧
+        </span>
+        <p>
+          <strong>
+            Uma pergunta para explorar:
+          </strong>
+          a categoria com maior faturamento também vende mais unidades? Aplique os filtros e compare. Os gráficos mostram padrões; não demonstram relações de causa e efeito.
+        </p>
+      </aside>
+      <footer>
+        <p>
+          Laboratório de dados
+          <span>
+            ·
+          </span>
+          Atividade de análise exploratória
+        </p>
+        <p>
+          CSV processado localmente. Bibliotecas via CDN exigem internet.
+        </p>
+      </footer>
+      <noscript>
+        <p class="notice warning">
+          Ative o JavaScript para carregar os dados e usar o dashboard.
+        </p>
+      </noscript>
+    </main>
+  </body>
+</html>

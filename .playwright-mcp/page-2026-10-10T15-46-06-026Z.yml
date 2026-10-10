@@ -1,0 +1,543 @@
+- generic [active] [ref=e1]:
+  - link "Ir para os indicadores" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - complementary [ref=e3]:
+    - link "Pão Pão Queijo Queijo, início" [ref=e4] [cursor=pointer]:
+      - /url: "#main"
+    - navigation "Navegação principal" [ref=e8]:
+      - link "Visão geral" [ref=e9] [cursor=pointer]:
+        - /url: "#main"
+        - generic [aria-hidden] [ref=e10]: ▦
+        - text: Visão geral
+      - link "Produtos" [ref=e11] [cursor=pointer]:
+        - /url: "#products"
+        - generic [aria-hidden] [ref=e12]: ▤
+        - text: Produtos
+      - link "Atendimento" [ref=e13] [cursor=pointer]:
+        - /url: "#service"
+        - generic [aria-hidden] [ref=e14]: ◷
+        - text: Atendimento
+      - link "Base de vendas" [ref=e15] [cursor=pointer]:
+        - /url: "#sales"
+        - generic [aria-hidden] [ref=e16]: ▥
+        - text: Base de vendas
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - text: Hamburgueria /
+        - strong [ref=e20]: Análise de vendas
+      - generic [ref=e21]: Dados didáticos
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: DE OLHO NO NEGÓCIO
+        - heading "Visão geral das vendas." [level=1] [ref=e26]
+        - paragraph [ref=e27]: Explore o que vende mais e como está o atendimento.
+      - button "Exportar seleção" [ref=e28] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e29]: ↓
+        - text: Exportar seleção
+    - region "Filtros do dashboard" [ref=e30]:
+      - generic [ref=e31]:
+        - group "Atalhos de período" [ref=e32]:
+          - button "Todo o período" [pressed] [ref=e33] [cursor=pointer]
+          - button "Julho" [ref=e34] [cursor=pointer]
+          - button "Agosto" [ref=e35] [cursor=pointer]
+          - button "Setembro" [ref=e36] [cursor=pointer]
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - text: De
+            - textbox "De" [ref=e39]: 2026-07-01
+          - generic [aria-hidden] [ref=e40]: —
+          - generic [ref=e41]:
+            - text: Até
+            - textbox "Até" [ref=e42]: 2026-09-30
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - text: CANAL
+          - combobox "CANAL" [ref=e45] [cursor=pointer]:
+            - option "Todos os canais" [selected]
+            - option "Balcão"
+            - option "Delivery"
+        - generic [ref=e46]:
+          - text: CATEGORIA
+          - combobox "CATEGORIA" [ref=e47] [cursor=pointer]:
+            - option "Todas as categorias" [selected]
+            - option "Acompanhamento"
+            - option "Bebida"
+            - option "Lanche"
+            - option "Sobremesa"
+        - generic [ref=e48]:
+          - text: PRODUTO
+          - combobox "PRODUTO" [ref=e49] [cursor=pointer]:
+            - option "Todos os produtos" [selected]
+            - option "Batata Frita"
+            - option "Milkshake"
+            - option "Refrigerante"
+            - option "Suco"
+            - option "X-Bacon"
+            - option "X-Burger"
+            - option "X-Salada"
+            - option "X-Tudo"
+        - generic [ref=e50]:
+          - text: TURNO
+          - combobox "TURNO" [ref=e51] [cursor=pointer]:
+            - option "Todos os turnos" [selected]
+            - option "Almoço"
+            - option "Noite"
+            - option "Tarde"
+        - generic [ref=e52]:
+          - text: PAGAMENTO
+          - combobox "PAGAMENTO" [ref=e53] [cursor=pointer]:
+            - option "Todas as formas" [selected]
+            - option "Cartão"
+            - option "Dinheiro"
+            - option "Pix"
+        - button "↺ Limpar" [ref=e54] [cursor=pointer]
+    - generic [ref=e55]:
+      - status [ref=e56]: 01/07/2026 a 30/09/2026 · 1.367 de 1.367 vendas · Todos os canais e produtos
+      - generic [ref=e57]: 92 dias corridos na seleção
+    - generic [ref=e58]:
+      - region "Indicadores da seleção" [ref=e59]:
+        - article [ref=e60]:
+          - generic [ref=e61]: Faturamento
+          - strong [ref=e62]: R$ 36.506,00
+          - generic [ref=e63]: Soma de quantidade × preço unitário
+          - generic [ref=e64]: Sem comparação anterior completa
+        - article [ref=e65]:
+          - generic [ref=e66]: Vendas registradas
+          - strong [ref=e67]: "1.367"
+          - generic [ref=e68]: 2.060 unidades vendidas
+          - generic [ref=e69]: Sem comparação anterior completa
+        - article [ref=e70]:
+          - generic [ref=e71]: Valor médio por venda
+          - strong [ref=e72]: R$ 26,71
+          - generic [ref=e73]: Faturamento ÷ vendas registradas
+          - generic [ref=e74]: Sem comparação anterior completa
+        - article [ref=e75]:
+          - generic [ref=e76]: Espera média
+          - strong [ref=e77]: 29,5 min
+          - generic [ref=e78]: Média de 1.367 registros
+          - generic [ref=e79]: Sem comparação anterior completa
+      - paragraph [ref=e80]: "Comparação indisponível: o período anterior (31/03/2026 a 30/06/2026) ou o atual não tem cobertura completa na base."
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: RITMO DO NEGÓCIO
+              - heading "Evolução das vendas" [level=2] [ref=e86]
+            - generic [ref=e87]:
+              - generic [ref=e88]: Métrica do gráfico
+              - combobox "Métrica do gráfico" [ref=e89] [cursor=pointer]:
+                - option "Faturamento" [selected]
+                - option "Unidades"
+                - option "Vendas"
+              - generic [ref=e90]: Agrupar por
+              - combobox "Agrupar por" [ref=e91] [cursor=pointer]:
+                - option "Por dia" [selected]
+                - option "Por semana"
+                - option "Por mês"
+          - img "Faturamento em reais ao longo do tempo 92 pontos entre 01/07/2026 e 30/09/2026. Eixo vertical começa em zero. Cada ponto informa o intervalo e seu valor." [ref=e93]:
+            - generic [ref=e94]: R$ 0
+            - generic [ref=e95]: R$ 200
+            - generic [ref=e96]: R$ 400
+            - generic [ref=e97]: R$ 600
+            - generic [ref=e98]: R$ 800
+            - generic [ref=e101]: 01/07
+            - generic "01/07/2026 R$ 164,10 · 6 vendas" [ref=e103]
+            - generic "02/07/2026 R$ 373,40 · 11 vendas" [ref=e105]
+            - generic "03/07/2026 R$ 268,20 · 10 vendas" [ref=e107]
+            - generic "04/07/2026 R$ 528,20 · 16 vendas" [ref=e109]
+            - generic "05/07/2026 R$ 356,70 · 17 vendas" [ref=e111]
+            - generic "06/07/2026 R$ 103,30 · 5 vendas" [ref=e113]
+            - generic "07/07/2026 R$ 163,50 · 8 vendas" [ref=e115]
+            - generic "08/07/2026 R$ 232,40 · 10 vendas" [ref=e117]
+            - generic "09/07/2026 R$ 120,10 · 7 vendas" [ref=e119]
+            - generic "10/07/2026 R$ 420,70 · 12 vendas" [ref=e121]
+            - generic "11/07/2026 R$ 400,20 · 20 vendas" [ref=e123]
+            - generic "12/07/2026 R$ 569,70 · 21 vendas" [ref=e125]
+            - generic "13/07/2026 R$ 447,80 · 12 vendas" [ref=e127]
+            - generic "14/07/2026 R$ 349,20 · 13 vendas" [ref=e129]
+            - generic "15/07/2026 R$ 286,30 · 11 vendas" [ref=e131]
+            - generic "16/07/2026 R$ 443,80 · 17 vendas" [ref=e133]
+            - generic [ref=e134]: 17/07
+            - generic "17/07/2026 R$ 640,40 · 23 vendas" [ref=e136]
+            - generic "18/07/2026 R$ 564,50 · 21 vendas" [ref=e138]
+            - generic "19/07/2026 R$ 533,30 · 16 vendas" [ref=e140]
+            - generic "20/07/2026 R$ 343,60 · 10 vendas" [ref=e142]
+            - generic "21/07/2026 R$ 216,60 · 9 vendas" [ref=e144]
+            - generic "22/07/2026 R$ 248,50 · 10 vendas" [ref=e146]
+            - generic "23/07/2026 R$ 447,30 · 18 vendas" [ref=e148]
+            - generic "24/07/2026 R$ 406,40 · 18 vendas" [ref=e150]
+            - generic "25/07/2026 R$ 430,90 · 18 vendas" [ref=e152]
+            - generic "26/07/2026 R$ 400,70 · 18 vendas" [ref=e154]
+            - generic "27/07/2026 R$ 107,30 · 5 vendas" [ref=e156]
+            - generic "28/07/2026 R$ 308,20 · 12 vendas" [ref=e158]
+            - generic "29/07/2026 R$ 219,00 · 7 vendas" [ref=e160]
+            - generic "30/07/2026 R$ 352,10 · 11 vendas" [ref=e162]
+            - generic "31/07/2026 R$ 342,50 · 16 vendas" [ref=e164]
+            - generic "01/08/2026 R$ 358,50 · 18 vendas" [ref=e166]
+            - generic [ref=e167]: 02/08
+            - generic "02/08/2026 R$ 448,40 · 18 vendas" [ref=e169]
+            - generic "03/08/2026 R$ 620,50 · 19 vendas" [ref=e171]
+            - generic "04/08/2026 R$ 199,00 · 9 vendas" [ref=e173]
+            - generic "05/08/2026 R$ 336,50 · 10 vendas" [ref=e175]
+            - generic "06/08/2026 R$ 216,80 · 10 vendas" [ref=e177]
+            - generic "07/08/2026 R$ 565,10 · 22 vendas" [ref=e179]
+            - generic "08/08/2026 R$ 449,00 · 19 vendas" [ref=e181]
+            - generic "09/08/2026 R$ 550,50 · 17 vendas" [ref=e183]
+            - generic "10/08/2026 R$ 435,70 · 17 vendas" [ref=e185]
+            - generic "11/08/2026 R$ 177,90 · 7 vendas" [ref=e187]
+            - generic "12/08/2026 R$ 225,50 · 10 vendas" [ref=e189]
+            - generic "13/08/2026 R$ 410,60 · 12 vendas" [ref=e191]
+            - generic "14/08/2026 R$ 697,60 · 25 vendas" [ref=e193]
+            - generic "15/08/2026 R$ 670,00 · 27 vendas" [ref=e195]
+            - generic "16/08/2026 R$ 351,90 · 17 vendas" [ref=e197]
+            - generic "17/08/2026 R$ 79,20 · 5 vendas" [ref=e199]
+            - generic [ref=e200]: 18/08
+            - generic "18/08/2026 R$ 215,50 · 9 vendas" [ref=e202]
+            - generic "19/08/2026 R$ 340,00 · 13 vendas" [ref=e204]
+            - generic "20/08/2026 R$ 340,90 · 17 vendas" [ref=e206]
+            - generic "21/08/2026 R$ 476,30 · 19 vendas" [ref=e208]
+            - generic "22/08/2026 R$ 476,50 · 16 vendas" [ref=e210]
+            - generic "23/08/2026 R$ 328,30 · 9 vendas" [ref=e212]
+            - generic "24/08/2026 R$ 259,80 · 10 vendas" [ref=e214]
+            - generic "25/08/2026 R$ 286,50 · 11 vendas" [ref=e216]
+            - generic "26/08/2026 R$ 329,10 · 14 vendas" [ref=e218]
+            - generic "27/08/2026 R$ 198,80 · 9 vendas" [ref=e220]
+            - generic "28/08/2026 R$ 790,90 · 23 vendas" [ref=e222]
+            - generic "29/08/2026 R$ 376,90 · 16 vendas" [ref=e224]
+            - generic "30/08/2026 R$ 508,70 · 16 vendas" [ref=e226]
+            - generic "31/08/2026 R$ 351,10 · 13 vendas" [ref=e228]
+            - generic "01/09/2026 R$ 547,40 · 17 vendas" [ref=e230]
+            - generic "02/09/2026 R$ 262,60 · 10 vendas" [ref=e232]
+            - generic [ref=e233]: 03/09
+            - generic "03/09/2026 R$ 419,90 · 16 vendas" [ref=e235]
+            - generic "04/09/2026 R$ 601,80 · 27 vendas" [ref=e237]
+            - generic "05/09/2026 R$ 783,40 · 31 vendas" [ref=e239]
+            - generic "06/09/2026 R$ 481,20 · 21 vendas" [ref=e241]
+            - generic "07/09/2026 R$ 230,90 · 7 vendas" [ref=e243]
+            - generic "08/09/2026 R$ 367,90 · 14 vendas" [ref=e245]
+            - generic "09/09/2026 R$ 605,90 · 20 vendas" [ref=e247]
+            - generic "10/09/2026 R$ 436,60 · 17 vendas" [ref=e249]
+            - generic "11/09/2026 R$ 783,80 · 30 vendas" [ref=e251]
+            - generic "12/09/2026 R$ 733,20 · 26 vendas" [ref=e253]
+            - generic "13/09/2026 R$ 713,30 · 24 vendas" [ref=e255]
+            - generic "14/09/2026 R$ 134,80 · 7 vendas" [ref=e257]
+            - generic "15/09/2026 R$ 320,00 · 12 vendas" [ref=e259]
+            - generic "16/09/2026 R$ 387,10 · 15 vendas" [ref=e261]
+            - generic "17/09/2026 R$ 465,50 · 15 vendas" [ref=e263]
+            - generic "18/09/2026 R$ 669,50 · 23 vendas" [ref=e265]
+            - generic [ref=e266]: 19/09
+            - generic "19/09/2026 R$ 728,30 · 24 vendas" [ref=e268]
+            - generic "20/09/2026 R$ 416,40 · 15 vendas" [ref=e270]
+            - generic "21/09/2026 R$ 359,50 · 10 vendas" [ref=e272]
+            - generic "22/09/2026 R$ 264,50 · 9 vendas" [ref=e274]
+            - generic "23/09/2026 R$ 405,30 · 15 vendas" [ref=e276]
+            - generic "24/09/2026 R$ 377,50 · 11 vendas" [ref=e278]
+            - generic "25/09/2026 R$ 251,40 · 11 vendas" [ref=e280]
+            - generic "26/09/2026 R$ 619,60 · 23 vendas" [ref=e282]
+            - generic "27/09/2026 R$ 422,80 · 16 vendas" [ref=e284]
+            - generic "28/09/2026 R$ 125,30 · 5 vendas" [ref=e286]
+            - generic "29/09/2026 R$ 220,70 · 10 vendas" [ref=e288]
+            - generic [ref=e289]: 30/09
+            - generic "30/09/2026 R$ 509,00 · 21 vendas" [ref=e291]
+          - generic [ref=e292]:
+            - generic [ref=e293]: Faturamento (R$) · diário
+            - generic [ref=e296]: Passe o cursor ou use Tab nos pontos
+        - generic [ref=e297]:
+          - generic [ref=e299]:
+            - paragraph [ref=e300]: DE ONDE VÊM AS VENDAS
+            - heading "Participação por canal" [level=2] [ref=e301]
+          - generic [ref=e302]:
+            - 'img "Delivery: R$ 20.213,90; Balcão: R$ 16.292,10" [ref=e304]':
+              - generic [ref=e305]:
+                - generic [ref=e306]: Maior participação
+                - strong [ref=e307]: 55,4%
+                - generic [ref=e308]: Delivery
+            - generic [ref=e309]:
+              - button "Filtrar canal Delivery" [ref=e310] [cursor=pointer]:
+                - generic [ref=e312]:
+                  - text: Delivery
+                  - generic [ref=e313]: R$ 20.213,90
+                - strong [ref=e314]: 55,4%
+              - button "Filtrar canal Balcão" [ref=e315] [cursor=pointer]:
+                - generic [ref=e317]:
+                  - text: Balcão
+                  - generic [ref=e318]: R$ 16.292,10
+                - strong [ref=e319]: 44,6%
+          - paragraph [ref=e320]: Selecione um canal para explorar os resultados.
+      - generic [ref=e321]:
+        - heading "O que sai da cozinha" [level=2] [ref=e322]
+        - generic [ref=e323]: Mix de produtos da seleção
+      - generic [ref=e324]:
+        - generic [ref=e325]:
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - heading "Produtos que mais vendem" [level=3] [ref=e328]
+              - paragraph [ref=e329]: Ranking por faturamento · clique para filtrar
+            - generic [ref=e330]: 8 produtos
+          - generic [ref=e331]:
+            - button "X-Bacon, R$ 7.833,80, 262 unidades. Filtrar produto." [ref=e332] [cursor=pointer]:
+              - generic [ref=e333]: X-Bacon
+              - generic [ref=e336]: R$ 7.833,80
+            - button "X-Burger, R$ 5.885,30, 257 unidades. Filtrar produto." [ref=e337] [cursor=pointer]:
+              - generic [ref=e338]: X-Burger
+              - generic [ref=e341]: R$ 5.885,30
+            - button "X-Tudo, R$ 5.444,40, 156 unidades. Filtrar produto." [ref=e342] [cursor=pointer]:
+              - generic [ref=e343]: X-Tudo
+              - generic [ref=e346]: R$ 5.444,40
+            - button "X-Salada, R$ 4.780,80, 192 unidades. Filtrar produto." [ref=e347] [cursor=pointer]:
+              - generic [ref=e348]: X-Salada
+              - generic [ref=e351]: R$ 4.780,80
+            - button "Batata Frita, R$ 3.963,40, 266 unidades. Filtrar produto." [ref=e352] [cursor=pointer]:
+              - generic [ref=e353]: Batata Frita
+              - generic [ref=e356]: R$ 3.963,40
+            - button "Refrigerante, R$ 3.822,60, 554 unidades. Filtrar produto." [ref=e357] [cursor=pointer]:
+              - generic [ref=e358]: Refrigerante
+              - generic [ref=e361]: R$ 3.822,60
+            - button "Milkshake, R$ 3.075,80, 182 unidades. Filtrar produto." [ref=e362] [cursor=pointer]:
+              - generic [ref=e363]: Milkshake
+              - generic [ref=e366]: R$ 3.075,80
+            - button "Suco, R$ 1.699,90, 191 unidades. Filtrar produto." [ref=e367] [cursor=pointer]:
+              - generic [ref=e368]: Suco
+              - generic [ref=e371]: R$ 1.699,90
+            - generic [ref=e372]:
+              - generic [ref=e373]: R$ 0
+              - generic [ref=e374]: R$ 7.833,80
+        - generic [ref=e375]:
+          - generic [ref=e377]:
+            - heading "Faturamento por categoria" [level=3] [ref=e378]
+            - paragraph [ref=e379]: Participação no total selecionado
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - generic [ref=e382]:
+                - text: Lanche
+                - generic [ref=e383]: 867 unidades
+              - generic [ref=e384]:
+                - text: R$ 23.944,30
+                - generic [ref=e385]: 65,6% do faturamento
+            - generic [ref=e386]:
+              - generic [ref=e387]:
+                - text: Bebida
+                - generic [ref=e388]: 745 unidades
+              - generic [ref=e389]:
+                - text: R$ 5.522,50
+                - generic [ref=e390]: 15,1% do faturamento
+            - generic [ref=e391]:
+              - generic [ref=e392]:
+                - text: Acompanhamento
+                - generic [ref=e393]: 266 unidades
+              - generic [ref=e394]:
+                - text: R$ 3.963,40
+                - generic [ref=e395]: 10,9% do faturamento
+            - generic [ref=e396]:
+              - generic [ref=e397]:
+                - text: Sobremesa
+                - generic [ref=e398]: 182 unidades
+              - generic [ref=e399]:
+                - text: R$ 3.075,80
+                - generic [ref=e400]: 8,4% do faturamento
+          - generic [ref=e401]: Lanche representa 65,6% do faturamento da seleção. Analise volume e preço antes de priorizar o mix.
+      - generic [ref=e402]:
+        - heading "Além da venda" [level=2] [ref=e403]
+        - generic [ref=e404]: Tempo de espera e experiência
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - generic [ref=e408]:
+            - heading "Espera por canal e turno" [level=3] [ref=e409]
+            - paragraph [ref=e410]: Média em minutos por registro de venda
+          - generic [ref=e411]:
+            - generic [ref=e412]:
+              - generic [ref=e413]: Balcão
+              - generic [ref=e415]: Delivery
+            - generic [ref=e417]:
+              - generic [ref=e418]: Almoço
+              - generic [ref=e419]:
+                - generic "Balcão, Almoço, 14,0 minutos, 184 registros" [ref=e420]: 14,0
+                - generic "Delivery, Almoço, 37,9 minutos, 202 registros" [ref=e423]: 37,9
+            - generic [ref=e426]:
+              - generic [ref=e427]: Tarde
+              - generic [ref=e428]:
+                - generic "Balcão, Tarde, 14,1 minutos, 91 registros" [ref=e429]: 14,1
+                - generic "Delivery, Tarde, 37,8 minutos, 119 registros" [ref=e432]: 37,8
+            - generic [ref=e435]:
+              - generic [ref=e436]: Noite
+              - generic [ref=e437]:
+                - generic "Balcão, Noite, 17,5 minutos, 344 registros" [ref=e438]: 17,5
+                - generic "Delivery, Noite, 42,8 minutos, 427 registros" [ref=e441]: 42,8
+            - generic [ref=e444]:
+              - generic [ref=e445]: 0 min
+              - generic [ref=e446]: 45,0 min
+          - paragraph [ref=e447]: Passe o cursor ou use Tab para ver a base de cada média.
+        - generic [ref=e448]:
+          - generic [ref=e450]:
+            - heading "Avaliações dos clientes" [level=3] [ref=e451]
+            - paragraph [ref=e452]: Somente notas preenchidas, de 1 a 5
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - strong [ref=e455]: 3,9
+              - text: de 5
+              - generic [aria-hidden] [ref=e456]: NOTA MÉDIA
+              - generic [ref=e457]: 1.231 avaliações · 90,1% de cobertura
+            - generic [ref=e458]:
+              - 'generic "Nota 5: 348 avaliações" [ref=e459]':
+                - generic [ref=e460]: "5"
+                - generic [ref=e463]: "348"
+              - 'generic "Nota 4: 499 avaliações" [ref=e464]':
+                - generic [ref=e465]: "4"
+                - generic [ref=e468]: "499"
+              - 'generic "Nota 3: 332 avaliações" [ref=e469]':
+                - generic [ref=e470]: "3"
+                - generic [ref=e473]: "332"
+              - 'generic "Nota 2: 52 avaliações" [ref=e474]':
+                - generic [ref=e475]: "2"
+                - generic [ref=e478]: "52"
+              - 'generic "Nota 1: 0 avaliações" [ref=e479]':
+                - generic [ref=e480]: "1"
+                - generic [ref=e482]: "0"
+          - paragraph [ref=e483]: 136 vendas sem avaliação. As notas refletem somente quem respondeu.
+      - generic [ref=e484]:
+        - heading "Leituras para agir" [level=2] [ref=e485]
+        - generic [ref=e486]: Achados calculados com os filtros atuais
+      - region "Insights e ações sugeridas" [ref=e487]:
+        - article [ref=e488]:
+          - generic [ref=e489]: MIX DE VENDAS
+          - heading "X-Bacon lidera o faturamento" [level=3] [ref=e490]
+          - paragraph [ref=e491]: R$ 7.833,80 em 262 unidades, equivalentes a 21,5% do faturamento.
+          - paragraph [ref=e492]:
+            - strong [ref=e493]: "Ação sugerida:"
+            - text: Confira disponibilidade e demanda deste produto antes de planejar compras.
+          - generic [ref=e494]: Sem custos e estoque, não é possível concluir rentabilidade ou ruptura.
+        - article [ref=e495]:
+          - generic [ref=e496]: OPERAÇÃO
+          - heading "Delivery tem espera 24,7 min maior" [level=3] [ref=e497]
+          - paragraph [ref=e498]: 40,7 min em 748 vendas, contra 16,0 min em Balcão (619 vendas).
+          - paragraph [ref=e499]:
+            - strong [ref=e500]: "Ação sugerida:"
+            - text: Investigue a preparação e o fluxo de atendimento do canal com maior espera.
+          - generic [ref=e501]: O mix e os turnos podem diferir. A comparação não identifica a causa.
+        - article [ref=e502]:
+          - generic [ref=e503]: PLANEJAMENTO
+          - heading "Sábado tem a maior média diária" [level=3] [ref=e504]
+          - paragraph [ref=e505]: R$ 547,63 por dia, sobre 13 datas cobertas da seleção.
+          - paragraph [ref=e506]:
+            - strong [ref=e507]: "Ação sugerida:"
+            - text: Use o histórico como apoio ao planejamento de equipe e compras.
+          - generic [ref=e508]: A média considera os dias cobertos. Dados fictícios e histórico curto não sustentam previsão.
+      - generic [ref=e509]:
+        - generic [ref=e510]:
+          - generic [ref=e511]:
+            - paragraph [ref=e512]: OS NÚMEROS POR TRÁS DO PAINEL
+            - heading "Base de vendas" [level=2] [ref=e513]
+            - paragraph [ref=e514]: Todos os registros desta seleção. Clique nos títulos para ordenar.
+          - generic [ref=e515]: 1.367 vendas
+        - table [ref=e517]:
+          - caption [ref=e518]: Vendas que correspondem aos filtros do dashboard
+          - rowgroup [ref=e519]:
+            - row [ref=e520]:
+              - columnheader [ref=e521]:
+                - button "Data ↕" [ref=e522] [cursor=pointer]
+              - columnheader [ref=e523]:
+                - button "Produto ↕" [ref=e524] [cursor=pointer]
+              - columnheader [ref=e525]:
+                - button "Canal ↕" [ref=e526] [cursor=pointer]
+              - columnheader [ref=e527]:
+                - button "Qtd. ↕" [ref=e528] [cursor=pointer]
+              - columnheader [ref=e529]:
+                - button "Valor ↕" [ref=e530] [cursor=pointer]
+              - columnheader [ref=e531]:
+                - button "Espera ↕" [ref=e532] [cursor=pointer]
+              - columnheader [ref=e533]:
+                - button "Nota ↕" [ref=e534] [cursor=pointer]
+          - rowgroup [ref=e535]:
+            - row [ref=e536]:
+              - cell "30/09/2026" [ref=e537]
+              - cell "Milkshake" [ref=e538]
+              - cell "Balcão" [ref=e539]
+              - cell "1" [ref=e541]
+              - cell "R$ 16,90" [ref=e542]
+              - cell "19 min" [ref=e543]
+              - cell "5 / 5" [ref=e544]
+            - row [ref=e545]:
+              - cell "30/09/2026" [ref=e546]
+              - cell "Batata Frita" [ref=e547]
+              - cell "Delivery" [ref=e548]
+              - cell "1" [ref=e550]
+              - cell "R$ 14,90" [ref=e551]
+              - cell "41 min" [ref=e552]
+              - cell "3 / 5" [ref=e553]
+            - row [ref=e554]:
+              - cell "30/09/2026" [ref=e555]
+              - cell "Suco" [ref=e556]
+              - cell "Balcão" [ref=e557]
+              - cell "1" [ref=e559]
+              - cell "R$ 8,90" [ref=e560]
+              - cell "16 min" [ref=e561]
+              - cell "5 / 5" [ref=e562]
+            - row [ref=e563]:
+              - cell "30/09/2026" [ref=e564]
+              - cell "X-Bacon" [ref=e565]
+              - cell "Balcão" [ref=e566]
+              - cell "2" [ref=e568]
+              - cell "R$ 59,80" [ref=e569]
+              - cell "19 min" [ref=e570]
+              - cell "5 / 5" [ref=e571]
+            - row [ref=e572]:
+              - cell "30/09/2026" [ref=e573]
+              - cell "Batata Frita" [ref=e574]
+              - cell "Balcão" [ref=e575]
+              - cell "3" [ref=e577]
+              - cell "R$ 44,70" [ref=e578]
+              - cell "17 min" [ref=e579]
+              - cell "4 / 5" [ref=e580]
+            - row [ref=e581]:
+              - cell "30/09/2026" [ref=e582]
+              - cell "Refrigerante" [ref=e583]
+              - cell "Delivery" [ref=e584]
+              - cell "3" [ref=e586]
+              - cell "R$ 20,70" [ref=e587]
+              - cell "34 min" [ref=e588]
+              - cell "4 / 5" [ref=e589]
+            - row [ref=e590]:
+              - cell "30/09/2026" [ref=e591]
+              - cell "X-Tudo" [ref=e592]
+              - cell "Delivery" [ref=e593]
+              - cell "1" [ref=e595]
+              - cell "R$ 34,90" [ref=e596]
+              - cell "51 min" [ref=e597]
+              - cell "3 / 5" [ref=e598]
+            - row [ref=e599]:
+              - cell "30/09/2026" [ref=e600]
+              - cell "X-Bacon" [ref=e601]
+              - cell "Delivery" [ref=e602]
+              - cell "1" [ref=e604]
+              - cell "R$ 29,90" [ref=e605]
+              - cell "51 min" [ref=e606]
+              - cell "2 / 5" [ref=e607]
+            - row [ref=e608]:
+              - cell "30/09/2026" [ref=e609]
+              - cell "Milkshake" [ref=e610]
+              - cell "Balcão" [ref=e611]
+              - cell "1" [ref=e613]
+              - cell "R$ 16,90" [ref=e614]
+              - cell "18 min" [ref=e615]
+              - cell "5 / 5" [ref=e616]
+            - row [ref=e617]:
+              - cell "30/09/2026" [ref=e618]
+              - cell "X-Salada" [ref=e619]
+              - cell "Delivery" [ref=e620]
+              - cell "2" [ref=e622]
+              - cell "R$ 49,80" [ref=e623]
+              - cell "49 min" [ref=e624]
+              - cell "4 / 5" [ref=e625]
+        - generic [ref=e626]:
+          - generic [ref=e627]: 1–10 de 1.367 registros
+          - generic [ref=e628]:
+            - button "Página anterior" [disabled] [ref=e629]: ←
+            - generic [ref=e630]: 1 / 137
+            - button "Próxima página" [ref=e631] [cursor=pointer]: →
+    - generic [ref=e632]:
+      - generic [ref=e633]:
+        - strong [ref=e634]: PÃO PÃO QUEIJO QUEIJO
+        - generic [ref=e635]: Vendas que viram conhecimento.
+      - paragraph [ref=e636]: "Fonte: vendas_hamburgueria.csv · 01/07/2026 a 30/09/2026. Atualização da origem não informada."
+      - button "Qualidade e metodologia ↗" [ref=e637] [cursor=pointer]

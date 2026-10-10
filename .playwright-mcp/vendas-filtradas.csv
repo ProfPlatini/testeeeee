@@ -1,0 +1,12 @@
+﻿id_venda;data;produto;categoria;regiao;quantidade;preco_unitario
+V0098;2025-02-11;Tênis casual;Moda;Nordeste;8;229.90
+V0028;2025-04-19;Tênis casual;Moda;Norte;7;229.90
+V0065;2025-05-04;Tênis casual;Moda;Centro-Oeste;6;229.90
+V0174;2025-06-08;Tênis casual;Moda;Sudeste;6;229.90
+V0046;2025-10-28;Tênis casual;Moda;Norte;6;229.90
+V0109;2025-01-03;Tênis casual;Moda;Centro-Oeste;5;229.90
+V0042;2025-06-03;Tênis casual;Moda;Nordeste;5;229.90
+V0127;2025-07-06;Tênis casual;Moda;Centro-Oeste;5;229.90
+V0159;2025-03-19;Tênis casual;Moda;Sul;4;229.90
+V0088;2025-04-10;Tênis casual;Moda;Norte;3;229.90
+V0023;2025-11-12;Tênis casual;Moda;Norte;3;229.90

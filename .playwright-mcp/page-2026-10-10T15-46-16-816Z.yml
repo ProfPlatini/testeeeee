@@ -1,0 +1,247 @@
+- generic [active] [ref=f1e1]:
+  - link "Pular para o conteúdo" [ref=f1e2] [cursor=pointer]:
+    - /url: "#conteudo"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "laboratório de dados" [ref=f1e5] [cursor=pointer]:
+        - /url: ./index.html
+        - generic [aria-hidden] [ref=f1e6]: ▥
+        - text: laboratório
+        - generic [ref=f1e7]: de dados
+      - generic [ref=f1e8]: Fundamentos de IA e Análise de Dados
+  - main [ref=f1e9]:
+    - region [ref=f1e10]:
+      - generic [ref=f1e11]:
+        - paragraph [ref=f1e12]: EXPLORAR · COMPARAR · DESCOBRIR
+        - heading "Panorama de vendas" [level=1] [ref=f1e13]
+        - paragraph [ref=f1e14]: Transforme registros em perguntas. Explore os resultados do seu negócio.
+      - generic [ref=f1e15]:
+        - button "Exportar CSV" [ref=f1e16] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f1e17]: ↓
+          - text: Exportar CSV
+        - button "Importar CSV" [ref=f1e18] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f1e19]: ↑
+          - text: Importar CSV
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]:
+        - strong [ref=f1e23]: Dados demonstrativos
+        - generic [ref=f1e24]: 200 vendas fictícias · janeiro a dezembro de 2025
+      - link "Baixar base exemplo ↗" [ref=f1e25] [cursor=pointer]:
+        - /url: ./dados-exemplo.csv
+    - group [ref=f1e26]:
+      - generic "Qualidade da base · 200 registros válidos · 0 descartados" [ref=f1e27] [cursor=pointer]
+    - region [ref=f1e28]:
+      - generic [ref=f1e29]:
+        - heading "Refine sua análise" [level=2] [ref=f1e30]
+        - button "↺ Limpar filtros" [ref=f1e31] [cursor=pointer]
+      - generic [ref=f1e32]:
+        - generic [ref=f1e33]:
+          - generic [ref=f1e34]: Data inicial
+          - textbox "Data inicial" [ref=f1e35]
+        - generic [ref=f1e36]:
+          - generic [ref=f1e37]: Data final
+          - textbox "Data final" [ref=f1e38]
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: Categoria
+          - combobox "Categoria" [ref=f1e41]:
+            - option "Todas as categorias" [selected]
+            - option "Casa e decoração"
+            - option "Esporte e lazer"
+            - option "Moda"
+            - option "Papelaria"
+            - option "Tecnologia"
+        - generic [ref=f1e42]:
+          - generic [ref=f1e43]: Região
+          - combobox "Região" [ref=f1e44]:
+            - option "Todas as regiões" [selected]
+            - option "Centro-Oeste"
+            - option "Nordeste"
+            - option "Norte"
+            - option "Sudeste"
+            - option "Sul"
+    - generic [ref=f1e45]:
+      - heading "Visão geral" [level=2] [ref=f1e46]
+      - status [ref=f1e47]: 200 de 200 registros válidos no recorte
+    - region "Indicadores das vendas filtradas" [ref=f1e48]:
+      - article [ref=f1e49]:
+        - generic [ref=f1e50]:
+          - text: Faturamento total
+          - generic [aria-hidden] [ref=f1e51]: R$
+        - strong [ref=f1e52]: R$ 288.929,00
+        - paragraph [ref=f1e53]: Soma da receita das vendas
+      - article [ref=f1e54]:
+        - generic [ref=f1e55]:
+          - text: Quantidade de vendas
+          - generic [aria-hidden] [ref=f1e56]: "#"
+        - strong [ref=f1e57]: "200"
+        - paragraph [ref=f1e58]: Identificadores únicos
+      - article [ref=f1e59]:
+        - generic [ref=f1e60]:
+          - text: Unidades vendidas
+          - generic [aria-hidden] [ref=f1e61]: ▦
+        - strong [ref=f1e62]: "910"
+        - paragraph [ref=f1e63]: Soma das quantidades
+      - article [ref=f1e64]:
+        - generic [ref=f1e65]:
+          - text: Ticket médio
+          - generic [aria-hidden] [ref=f1e66]: R$
+        - strong [ref=f1e67]: R$ 1.444,65
+        - paragraph [ref=f1e68]: Faturamento por venda única
+    - region [ref=f1e69]:
+      - generic [ref=f1e70]:
+        - generic [ref=f1e71]:
+          - heading "O ritmo das vendas" [level=2] [ref=f1e72]
+          - paragraph [ref=f1e73]: Faturamento mensal · reais (R$)
+        - generic [ref=f1e74]: Faturamento
+      - 'img "Faturamento mensal: jan. de 25: R$ 23.197,80; fev. de 25: R$ 35.716,70; mar. de 25: R$ 41.437,30; abr. de 25: R$ 30.881,60; mai. de 25: R$ 36.576,70; jun. de 25: R$ 8.257,90; jul. de 25: R$ 7.547,60; ago. de 25: R$ 11.988,30; set. de 25: R$ 5.632,70; out. de 25: R$ 19.532,70; nov. de 25: R$ 40.477,10; dez. de 25: R$ 27.682,60" [ref=f1e77]'
+      - paragraph [ref=f1e78]: 12 meses exibidos · 01/2025 a 12/2025. Meses sem registros no intervalo exibido têm receita zero.
+    - generic [ref=f1e79]:
+      - region [ref=f1e80]:
+        - generic [ref=f1e81]:
+          - generic [ref=f1e82]:
+            - heading "Receita por categoria" [level=2] [ref=f1e83]
+            - paragraph [ref=f1e84]: Quais produtos movimentam o resultado?
+          - generic [ref=f1e85]: R$
+        - 'img "Faturamento por categoria: Tecnologia: R$ 218.391,40; Moda: R$ 26.911,00; Casa e decoração: R$ 23.081,60; Esporte e lazer: R$ 17.129,70; Papelaria: R$ 3.415,30" [ref=f1e87]'
+        - paragraph [ref=f1e88]: 5 categorias no recorte · valores em ordem decrescente de faturamento.
+      - region [ref=f1e89]:
+        - generic [ref=f1e90]:
+          - generic [ref=f1e91]:
+            - heading "Receita por região" [level=2] [ref=f1e92]
+            - paragraph [ref=f1e93]: Compare os resultados em cada região.
+          - generic [ref=f1e94]: R$
+        - 'img "Faturamento por regiao: Centro-Oeste: R$ 83.643,10; Nordeste: R$ 58.638,90; Sul: R$ 56.930,50; Sudeste: R$ 45.002,30; Norte: R$ 44.714,20" [ref=f1e96]'
+        - paragraph [ref=f1e97]: 5 regiões no recorte · valores em ordem decrescente de faturamento.
+    - region [ref=f1e98]:
+      - generic [ref=f1e99]:
+        - generic [ref=f1e100]:
+          - heading "Os dados por trás dos números" [level=2] [ref=f1e101]
+          - paragraph [ref=f1e102]: Pesquise para filtrar toda a análise. Clique nos títulos para ordenar.
+        - generic [ref=f1e103]:
+          - generic [ref=f1e104]: Pesquisar ID, produto, categoria ou região
+          - searchbox "Pesquisar ID, produto, categoria ou região" [ref=f1e105]
+      - region "Tabela de vendas com rolagem horizontal" [ref=f1e106]:
+        - table [ref=f1e107]:
+          - caption [ref=f1e108]: Registros filtrados de vendas. A receita é quantidade vezes preço unitário.
+          - rowgroup [ref=f1e109]:
+            - row [ref=f1e110]:
+              - columnheader [ref=f1e111]:
+                - button "ID da venda ↕" [ref=f1e112] [cursor=pointer]
+              - columnheader [ref=f1e113]:
+                - button "Data ↑" [ref=f1e114] [cursor=pointer]
+              - columnheader [ref=f1e115]:
+                - button "Produto ↕" [ref=f1e116] [cursor=pointer]
+              - columnheader [ref=f1e117]:
+                - button "Categoria ↕" [ref=f1e118] [cursor=pointer]
+              - columnheader [ref=f1e119]:
+                - button "Região ↕" [ref=f1e120] [cursor=pointer]
+              - columnheader [ref=f1e121]:
+                - button "Unidades ↕" [ref=f1e122] [cursor=pointer]
+              - columnheader [ref=f1e123]:
+                - button "Preço unitário ↕" [ref=f1e124] [cursor=pointer]
+              - columnheader [ref=f1e125]:
+                - button "Faturamento ↕" [ref=f1e126] [cursor=pointer]
+          - rowgroup [ref=f1e127]:
+            - row [ref=f1e128]:
+              - cell "V0145" [ref=f1e129]
+              - cell "02/01/2025" [ref=f1e130]
+              - cell "Tapete de yoga" [ref=f1e131]
+              - cell "Esporte e lazer" [ref=f1e132]
+              - cell "Sudeste" [ref=f1e134]
+              - cell "6" [ref=f1e135]
+              - cell "R$ 99,90" [ref=f1e136]
+              - cell "R$ 599,40" [ref=f1e137]
+            - row [ref=f1e138]:
+              - cell "V0001" [ref=f1e139]
+              - cell "03/01/2025" [ref=f1e140]
+              - cell "Jogo de toalhas" [ref=f1e141]
+              - cell "Casa e decoração" [ref=f1e142]
+              - cell "Sudeste" [ref=f1e144]
+              - cell "3" [ref=f1e145]
+              - cell "R$ 89,90" [ref=f1e146]
+              - cell "R$ 269,70" [ref=f1e147]
+            - row [ref=f1e148]:
+              - cell "V0109" [ref=f1e149]
+              - cell "03/01/2025" [ref=f1e150]
+              - cell "Tênis casual" [ref=f1e151]
+              - cell "Moda" [ref=f1e152]
+              - cell "Centro-Oeste" [ref=f1e154]
+              - cell "5" [ref=f1e155]
+              - cell "R$ 229,90" [ref=f1e156]
+              - cell "R$ 1.149,50" [ref=f1e157]
+            - row [ref=f1e158]:
+              - cell "V0181" [ref=f1e159]
+              - cell "04/01/2025" [ref=f1e160]
+              - cell "Jogo de toalhas" [ref=f1e161]
+              - cell "Casa e decoração" [ref=f1e162]
+              - cell "Norte" [ref=f1e164]
+              - cell "2" [ref=f1e165]
+              - cell "R$ 89,90" [ref=f1e166]
+              - cell "R$ 179,80" [ref=f1e167]
+            - row [ref=f1e168]:
+              - cell "V0013" [ref=f1e169]
+              - cell "05/01/2025" [ref=f1e170]
+              - cell "Caderno" [ref=f1e171]
+              - cell "Papelaria" [ref=f1e172]
+              - cell "Sul" [ref=f1e174]
+              - cell "6" [ref=f1e175]
+              - cell "R$ 24,90" [ref=f1e176]
+              - cell "R$ 149,40" [ref=f1e177]
+            - row [ref=f1e178]:
+              - cell "V0037" [ref=f1e179]
+              - cell "06/01/2025" [ref=f1e180]
+              - cell "Caderno" [ref=f1e181]
+              - cell "Papelaria" [ref=f1e182]
+              - cell "Norte" [ref=f1e184]
+              - cell "3" [ref=f1e185]
+              - cell "R$ 24,90" [ref=f1e186]
+              - cell "R$ 74,70" [ref=f1e187]
+            - row [ref=f1e188]:
+              - cell "V0049" [ref=f1e189]
+              - cell "06/01/2025" [ref=f1e190]
+              - cell "Mouse sem fio" [ref=f1e191]
+              - cell "Tecnologia" [ref=f1e192]
+              - cell "Centro-Oeste" [ref=f1e194]
+              - cell "6" [ref=f1e195]
+              - cell "R$ 89,90" [ref=f1e196]
+              - cell "R$ 539,40" [ref=f1e197]
+            - row [ref=f1e198]:
+              - cell "V0097" [ref=f1e199]
+              - cell "08/01/2025" [ref=f1e200]
+              - cell "Garrafa térmica" [ref=f1e201]
+              - cell "Esporte e lazer" [ref=f1e202]
+              - cell "Centro-Oeste" [ref=f1e204]
+              - cell "4" [ref=f1e205]
+              - cell "R$ 69,90" [ref=f1e206]
+              - cell "R$ 279,60" [ref=f1e207]
+            - row [ref=f1e208]:
+              - cell "V0121" [ref=f1e209]
+              - cell "10/01/2025" [ref=f1e210]
+              - cell "Mouse sem fio" [ref=f1e211]
+              - cell "Tecnologia" [ref=f1e212]
+              - cell "Nordeste" [ref=f1e214]
+              - cell "3" [ref=f1e215]
+              - cell "R$ 89,90" [ref=f1e216]
+              - cell "R$ 269,70" [ref=f1e217]
+            - row [ref=f1e218]:
+              - cell "V0169" [ref=f1e219]
+              - cell "10/01/2025" [ref=f1e220]
+              - cell "Jogo de toalhas" [ref=f1e221]
+              - cell "Casa e decoração" [ref=f1e222]
+              - cell "Centro-Oeste" [ref=f1e224]
+              - cell "8" [ref=f1e225]
+              - cell "R$ 89,90" [ref=f1e226]
+              - cell "R$ 719,20" [ref=f1e227]
+      - generic [ref=f1e228]:
+        - paragraph [ref=f1e229]: 1–10 de 200 registros · página 1 de 20
+        - generic [ref=f1e230]:
+          - button "Página anterior" [disabled] [ref=f1e231]: ← Anterior
+          - button "Próxima página" [ref=f1e232] [cursor=pointer]: Próxima →
+    - complementary [ref=f1e233]:
+      - generic [aria-hidden] [ref=f1e234]: ✧
+      - paragraph [ref=f1e235]:
+        - strong [ref=f1e236]: "Uma pergunta para explorar:"
+        - text: a categoria com maior faturamento também vende mais unidades? Aplique os filtros e compare. Os gráficos mostram padrões; não demonstram relações de causa e efeito.
+    - generic [ref=f1e237]:
+      - paragraph [ref=f1e238]: Laboratório de dados · Atividade de análise exploratória
+      - paragraph [ref=f1e239]: CSV processado localmente. Bibliotecas via CDN exigem internet.

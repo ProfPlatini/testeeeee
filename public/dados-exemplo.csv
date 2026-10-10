@@ -1,0 +1,201 @@
+id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+V0145,2025-01-02,Tapete de yoga,Esporte e lazer,Sudeste,6,99.90
+V0001,2025-01-03,Jogo de toalhas,Casa e decoração,Sudeste,3,89.90
+V0109,2025-01-03,Tênis casual,Moda,Centro-Oeste,5,229.90
+V0181,2025-01-04,Jogo de toalhas,Casa e decoração,Norte,2,89.90
+V0013,2025-01-05,Caderno,Papelaria,Sul,6,24.90
+V0037,2025-01-06,Caderno,Papelaria,Norte,3,24.90
+V0049,2025-01-06,Mouse sem fio,Tecnologia,Centro-Oeste,6,89.90
+V0097,2025-01-08,Garrafa térmica,Esporte e lazer,Centro-Oeste,4,69.90
+V0121,2025-01-10,Mouse sem fio,Tecnologia,Nordeste,3,89.90
+V0169,2025-01-10,Jogo de toalhas,Casa e decoração,Centro-Oeste,8,89.90
+V0061,2025-01-12,Cafeteira,Casa e decoração,Sudeste,1,249.90
+V0157,2025-01-13,Mouse sem fio,Tecnologia,Sul,4,89.90
+V0073,2025-01-14,Tapete de yoga,Esporte e lazer,Norte,3,99.90
+V0085,2025-01-16,Kit de canetas,Papelaria,Centro-Oeste,7,19.90
+V0025,2025-01-21,Garrafa térmica,Esporte e lazer,Nordeste,1,69.90
+V0133,2025-01-28,Notebook,Tecnologia,Centro-Oeste,5,3499.90
+V0193,2025-01-28,Garrafa térmica,Esporte e lazer,Sudeste,5,69.90
+V0002,2025-02-01,Jogo de toalhas,Casa e decoração,Centro-Oeste,7,89.90
+V0086,2025-02-02,Notebook,Tecnologia,Centro-Oeste,3,3499.90
+V0110,2025-02-05,Mochila,Moda,Norte,8,149.90
+V0194,2025-02-08,Cafeteira,Casa e decoração,Sul,1,249.90
+V0098,2025-02-11,Tênis casual,Moda,Nordeste,8,229.90
+V0182,2025-02-11,Garrafa térmica,Esporte e lazer,Norte,2,69.90
+V0014,2025-02-19,Mouse sem fio,Tecnologia,Sudeste,5,89.90
+V0122,2025-02-19,Camiseta,Moda,Norte,7,59.90
+V0158,2025-02-19,Mochila,Moda,Sudeste,7,149.90
+V0038,2025-02-22,Camiseta,Moda,Sudeste,6,59.90
+V0026,2025-02-24,Mochila,Moda,Sul,3,149.90
+V0074,2025-02-24,Kit de canetas,Papelaria,Centro-Oeste,6,19.90
+V0146,2025-02-25,Garrafa térmica,Esporte e lazer,Sudeste,7,69.90
+V0050,2025-02-26,Kit de canetas,Papelaria,Sul,1,19.90
+V0134,2025-02-26,Notebook,Tecnologia,Nordeste,5,3499.90
+V0062,2025-02-28,Mouse sem fio,Tecnologia,Centro-Oeste,2,89.90
+V0170,2025-02-28,Caderno,Papelaria,Centro-Oeste,5,24.90
+V0111,2025-03-03,Jogo de toalhas,Casa e decoração,Sul,4,89.90
+V0063,2025-03-04,Caderno,Papelaria,Sul,7,24.90
+V0135,2025-03-05,Cafeteira,Casa e decoração,Norte,5,249.90
+V0195,2025-03-06,Mouse sem fio,Tecnologia,Sul,8,89.90
+V0087,2025-03-07,Notebook,Tecnologia,Centro-Oeste,3,3499.90
+V0003,2025-03-08,Garrafa térmica,Esporte e lazer,Norte,7,69.90
+V0075,2025-03-12,Garrafa térmica,Esporte e lazer,Nordeste,3,69.90
+V0027,2025-03-13,Jogo de toalhas,Casa e decoração,Centro-Oeste,4,89.90
+V0099,2025-03-14,Mochila,Moda,Norte,3,149.90
+V0183,2025-03-18,Notebook,Tecnologia,Nordeste,2,3499.90
+V0159,2025-03-19,Tênis casual,Moda,Sul,4,229.90
+V0147,2025-03-22,Garrafa térmica,Esporte e lazer,Sudeste,8,69.90
+V0039,2025-03-23,Caderno,Papelaria,Sul,4,24.90
+V0123,2025-03-23,Notebook,Tecnologia,Nordeste,5,3499.90
+V0171,2025-03-26,Jogo de toalhas,Casa e decoração,Norte,5,89.90
+V0015,2025-03-27,Luminária,Casa e decoração,Sul,3,119.90
+V0051,2025-03-27,Kit de canetas,Papelaria,Norte,2,19.90
+V0112,2025-04-02,Garrafa térmica,Esporte e lazer,Centro-Oeste,3,69.90
+V0004,2025-04-04,Cafeteira,Casa e decoração,Norte,2,249.90
+V0124,2025-04-04,Fone Bluetooth,Tecnologia,Norte,7,189.90
+V0100,2025-04-05,Tapete de yoga,Esporte e lazer,Norte,4,99.90
+V0148,2025-04-07,Jogo de toalhas,Casa e decoração,Norte,5,89.90
+V0184,2025-04-07,Garrafa térmica,Esporte e lazer,Sudeste,8,69.90
+V0136,2025-04-09,Mouse sem fio,Tecnologia,Centro-Oeste,6,89.90
+V0088,2025-04-10,Tênis casual,Moda,Norte,3,229.90
+V0064,2025-04-18,Luminária,Casa e decoração,Centro-Oeste,2,119.90
+V0160,2025-04-18,Caderno,Papelaria,Sul,4,24.90
+V0028,2025-04-19,Tênis casual,Moda,Norte,7,229.90
+V0076,2025-04-20,Fone Bluetooth,Tecnologia,Nordeste,5,189.90
+V0172,2025-04-20,Cafeteira,Casa e decoração,Centro-Oeste,5,249.90
+V0052,2025-04-22,Caderno,Papelaria,Sul,6,24.90
+V0196,2025-04-22,Cafeteira,Casa e decoração,Centro-Oeste,3,249.90
+V0016,2025-04-24,Kit de canetas,Papelaria,Centro-Oeste,8,19.90
+V0040,2025-04-25,Notebook,Tecnologia,Centro-Oeste,6,3499.90
+V0029,2025-05-02,Tapete de yoga,Esporte e lazer,Nordeste,4,99.90
+V0101,2025-05-02,Caderno,Papelaria,Centro-Oeste,5,24.90
+V0065,2025-05-04,Tênis casual,Moda,Centro-Oeste,6,229.90
+V0089,2025-05-05,Mouse sem fio,Tecnologia,Norte,3,89.90
+V0005,2025-05-07,Caderno,Papelaria,Sudeste,2,24.90
+V0161,2025-05-09,Cafeteira,Casa e decoração,Sudeste,4,249.90
+V0053,2025-05-10,Caderno,Papelaria,Nordeste,5,24.90
+V0173,2025-05-14,Fone Bluetooth,Tecnologia,Nordeste,7,189.90
+V0185,2025-05-14,Fone Bluetooth,Tecnologia,Nordeste,1,189.90
+V0137,2025-05-15,Mochila,Moda,Norte,8,149.90
+V0125,2025-05-16,Caderno,Papelaria,Sul,7,24.90
+V0041,2025-05-17,Mochila,Moda,Sudeste,6,149.90
+V0149,2025-05-17,Camiseta,Moda,Norte,1,59.90
+V0197,2025-05-19,Garrafa térmica,Esporte e lazer,Sudeste,3,69.90
+V0077,2025-05-22,Notebook,Tecnologia,Sudeste,8,3499.90
+V0113,2025-05-23,Jogo de toalhas,Casa e decoração,Sul,6,89.90
+V0017,2025-05-26,Jogo de toalhas,Casa e decoração,Sudeste,7,89.90
+V0006,2025-06-02,Cafeteira,Casa e decoração,Sul,1,249.90
+V0018,2025-06-03,Bola de futebol,Esporte e lazer,Sul,7,79.90
+V0042,2025-06-03,Tênis casual,Moda,Nordeste,5,229.90
+V0090,2025-06-05,Camiseta,Moda,Sudeste,3,59.90
+V0102,2025-06-05,Tapete de yoga,Esporte e lazer,Sul,4,99.90
+V0078,2025-06-06,Luminária,Casa e decoração,Nordeste,4,119.90
+V0030,2025-06-07,Camiseta,Moda,Nordeste,8,59.90
+V0174,2025-06-08,Tênis casual,Moda,Sudeste,6,229.90
+V0186,2025-06-08,Luminária,Casa e decoração,Sul,8,119.90
+V0054,2025-06-09,Garrafa térmica,Esporte e lazer,Nordeste,1,69.90
+V0162,2025-06-16,Cafeteira,Casa e decoração,Sul,1,249.90
+V0066,2025-06-17,Caderno,Papelaria,Norte,3,24.90
+V0126,2025-06-17,Luminária,Casa e decoração,Nordeste,5,119.90
+V0138,2025-06-17,Jogo de toalhas,Casa e decoração,Nordeste,8,89.90
+V0114,2025-06-21,Tapete de yoga,Esporte e lazer,Centro-Oeste,5,99.90
+V0198,2025-06-24,Jogo de toalhas,Casa e decoração,Sudeste,1,89.90
+V0150,2025-06-27,Luminária,Casa e decoração,Sul,1,119.90
+V0127,2025-07-06,Tênis casual,Moda,Centro-Oeste,5,229.90
+V0187,2025-07-12,Caderno,Papelaria,Centro-Oeste,1,24.90
+V0055,2025-07-13,Tapete de yoga,Esporte e lazer,Sul,7,99.90
+V0139,2025-07-14,Mochila,Moda,Norte,3,149.90
+V0199,2025-07-16,Bola de futebol,Esporte e lazer,Sul,1,79.90
+V0007,2025-07-17,Jogo de toalhas,Casa e decoração,Norte,4,89.90
+V0043,2025-07-17,Bola de futebol,Esporte e lazer,Sudeste,7,79.90
+V0103,2025-07-17,Luminária,Casa e decoração,Sudeste,8,119.90
+V0091,2025-07-18,Mouse sem fio,Tecnologia,Norte,4,89.90
+V0019,2025-07-19,Tapete de yoga,Esporte e lazer,Norte,6,99.90
+V0031,2025-07-19,Kit de canetas,Papelaria,Nordeste,5,19.90
+V0115,2025-07-20,Camiseta,Moda,Norte,2,59.90
+V0175,2025-07-20,Luminária,Casa e decoração,Norte,6,119.90
+V0163,2025-07-22,Cafeteira,Casa e decoração,Nordeste,1,249.90
+V0067,2025-07-23,Jogo de toalhas,Casa e decoração,Sudeste,5,89.90
+V0079,2025-07-26,Garrafa térmica,Esporte e lazer,Norte,7,69.90
+V0151,2025-07-28,Mouse sem fio,Tecnologia,Nordeste,2,89.90
+V0032,2025-08-01,Jogo de toalhas,Casa e decoração,Norte,7,89.90
+V0008,2025-08-07,Caderno,Papelaria,Norte,4,24.90
+V0080,2025-08-09,Bola de futebol,Esporte e lazer,Nordeste,2,79.90
+V0152,2025-08-09,Jogo de toalhas,Casa e decoração,Centro-Oeste,8,89.90
+V0068,2025-08-12,Mouse sem fio,Tecnologia,Centro-Oeste,5,89.90
+V0188,2025-08-12,Camiseta,Moda,Centro-Oeste,1,59.90
+V0176,2025-08-16,Mouse sem fio,Tecnologia,Centro-Oeste,3,89.90
+V0200,2025-08-18,Luminária,Casa e decoração,Sul,2,119.90
+V0020,2025-08-20,Kit de canetas,Papelaria,Nordeste,6,19.90
+V0044,2025-08-20,Garrafa térmica,Esporte e lazer,Sudeste,6,69.90
+V0104,2025-08-21,Garrafa térmica,Esporte e lazer,Norte,7,69.90
+V0092,2025-08-22,Caderno,Papelaria,Sul,3,24.90
+V0128,2025-08-22,Notebook,Tecnologia,Sul,2,3499.90
+V0140,2025-08-22,Cafeteira,Casa e decoração,Centro-Oeste,2,249.90
+V0116,2025-08-23,Luminária,Casa e decoração,Nordeste,1,119.90
+V0056,2025-08-25,Bola de futebol,Esporte e lazer,Centro-Oeste,5,79.90
+V0164,2025-08-25,Bola de futebol,Esporte e lazer,Sudeste,3,79.90
+V0189,2025-09-01,Camiseta,Moda,Sudeste,2,59.90
+V0153,2025-09-02,Luminária,Casa e decoração,Centro-Oeste,8,119.90
+V0045,2025-09-04,Mochila,Moda,Nordeste,3,149.90
+V0093,2025-09-04,Tapete de yoga,Esporte e lazer,Norte,6,99.90
+V0033,2025-09-05,Camiseta,Moda,Nordeste,4,59.90
+V0081,2025-09-09,Tapete de yoga,Esporte e lazer,Centro-Oeste,4,99.90
+V0141,2025-09-10,Tapete de yoga,Esporte e lazer,Sudeste,6,99.90
+V0057,2025-09-11,Tapete de yoga,Esporte e lazer,Nordeste,5,99.90
+V0165,2025-09-13,Garrafa térmica,Esporte e lazer,Sudeste,1,69.90
+V0117,2025-09-17,Bola de futebol,Esporte e lazer,Centro-Oeste,2,79.90
+V0021,2025-09-18,Camiseta,Moda,Sul,5,59.90
+V0069,2025-09-22,Mouse sem fio,Tecnologia,Sudeste,1,89.90
+V0009,2025-09-26,Caderno,Papelaria,Sudeste,8,24.90
+V0105,2025-09-27,Caderno,Papelaria,Centro-Oeste,8,24.90
+V0129,2025-09-27,Mochila,Moda,Centro-Oeste,4,149.90
+V0177,2025-09-27,Caderno,Papelaria,Nordeste,6,24.90
+V0034,2025-10-11,Bola de futebol,Esporte e lazer,Centro-Oeste,3,79.90
+V0190,2025-10-11,Kit de canetas,Papelaria,Nordeste,6,19.90
+V0142,2025-10-12,Fone Bluetooth,Tecnologia,Sudeste,4,189.90
+V0082,2025-10-14,Notebook,Tecnologia,Sul,3,3499.90
+V0130,2025-10-15,Luminária,Casa e decoração,Centro-Oeste,4,119.90
+V0010,2025-10-17,Mochila,Moda,Norte,2,149.90
+V0178,2025-10-19,Caderno,Papelaria,Norte,4,24.90
+V0070,2025-10-20,Bola de futebol,Esporte e lazer,Centro-Oeste,5,79.90
+V0058,2025-10-21,Luminária,Casa e decoração,Norte,6,119.90
+V0094,2025-10-21,Camiseta,Moda,Centro-Oeste,3,59.90
+V0154,2025-10-22,Bola de futebol,Esporte e lazer,Nordeste,7,79.90
+V0118,2025-10-23,Fone Bluetooth,Tecnologia,Nordeste,6,189.90
+V0106,2025-10-27,Fone Bluetooth,Tecnologia,Norte,6,189.90
+V0166,2025-10-27,Fone Bluetooth,Tecnologia,Norte,2,189.90
+V0022,2025-10-28,Fone Bluetooth,Tecnologia,Centro-Oeste,6,189.90
+V0046,2025-10-28,Tênis casual,Moda,Norte,6,229.90
+V0155,2025-11-05,Camiseta,Moda,Sudeste,5,59.90
+V0011,2025-11-07,Jogo de toalhas,Casa e decoração,Nordeste,2,89.90
+V0071,2025-11-09,Tapete de yoga,Esporte e lazer,Norte,1,99.90
+V0167,2025-11-11,Notebook,Tecnologia,Centro-Oeste,1,3499.90
+V0023,2025-11-12,Tênis casual,Moda,Norte,3,229.90
+V0143,2025-11-12,Caderno,Papelaria,Norte,7,24.90
+V0179,2025-11-14,Tapete de yoga,Esporte e lazer,Sul,4,99.90
+V0191,2025-11-18,Mochila,Moda,Sudeste,5,149.90
+V0095,2025-11-19,Mochila,Moda,Sudeste,8,149.90
+V0035,2025-11-21,Bola de futebol,Esporte e lazer,Centro-Oeste,6,79.90
+V0083,2025-11-21,Cafeteira,Casa e decoração,Nordeste,4,249.90
+V0047,2025-11-24,Camiseta,Moda,Nordeste,8,59.90
+V0119,2025-11-24,Fone Bluetooth,Tecnologia,Sul,7,189.90
+V0059,2025-11-25,Notebook,Tecnologia,Sul,8,3499.90
+V0107,2025-11-26,Fone Bluetooth,Tecnologia,Norte,6,189.90
+V0131,2025-11-27,Fone Bluetooth,Tecnologia,Sudeste,4,189.90
+V0072,2025-12-01,Tapete de yoga,Esporte e lazer,Centro-Oeste,5,99.90
+V0192,2025-12-04,Mochila,Moda,Centro-Oeste,3,149.90
+V0060,2025-12-05,Jogo de toalhas,Casa e decoração,Norte,7,89.90
+V0048,2025-12-06,Tapete de yoga,Esporte e lazer,Sul,2,99.90
+V0096,2025-12-06,Camiseta,Moda,Centro-Oeste,4,59.90
+V0120,2025-12-06,Kit de canetas,Papelaria,Sudeste,8,19.90
+V0132,2025-12-07,Tapete de yoga,Esporte e lazer,Nordeste,5,99.90
+V0036,2025-12-13,Fone Bluetooth,Tecnologia,Nordeste,8,189.90
+V0144,2025-12-14,Mouse sem fio,Tecnologia,Sul,3,89.90
+V0156,2025-12-14,Camiseta,Moda,Sul,8,59.90
+V0084,2025-12-17,Notebook,Tecnologia,Norte,6,3499.90
+V0108,2025-12-19,Mouse sem fio,Tecnologia,Norte,1,89.90
+V0168,2025-12-19,Fone Bluetooth,Tecnologia,Centro-Oeste,4,189.90
+V0012,2025-12-20,Camiseta,Moda,Norte,2,59.90
+V0024,2025-12-27,Tapete de yoga,Esporte e lazer,Centro-Oeste,5,99.90
+V0180,2025-12-28,Jogo de toalhas,Casa e decoração,Norte,3,89.90

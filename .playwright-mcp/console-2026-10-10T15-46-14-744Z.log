@@ -1,0 +1,2 @@
+[  394384ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js:0
+[  394384ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js:0
